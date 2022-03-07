@@ -11,10 +11,10 @@ resource "azurerm_storage_account" "mysta321" {
 output "primary_blob_endpoint" {
     value                       = azurerm_storage_account.mysta321.primary_blob_endpoint
 }
-output "primary_blob_host" {
-    value                       = azurerm_storage_account.mysta321.primary_blob_host
+output "AZURE_STORAGE_ACCOUNT_NAME" {
+    value                       = azurerm_storage_account.mysta321.name
 }
-output "primary_access_key" {
+output "AZURE_STORAGE_PRIMARY_ACCOUNT_KEY" {
     value                       = azurerm_storage_account.mysta321.primary_access_key
     sensitive = true
 }
