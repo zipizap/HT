@@ -1,1 +1,3 @@
-local-env.source
+local-*.*
+az-storage-enum
+
