@@ -29,7 +29,13 @@ cd ..
 ```
 
 
-## Compile Golang program, build docker image, create k8s (kind) cluster, deploy helm-chart with pod using secret for env-vars
+## From Docker to k8s pod
+It will:
+- Compile Golang program
+- build docker image
+- create k8s (kind) cluster
+- deploy helm-chart with pod, using secret from env-vars
+
 ```
 ./compileGolang.buildDocker.deployKindHelmChart.sh
 ```
