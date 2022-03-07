@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 )
@@ -144,5 +145,7 @@ func main() {
 	if err = pagerC.Err(); err != nil {
 		log.Fatal(err)
 	}
+	// sleep 1h for pod to be visible
+	time.Sleep(3600 * time.Second)
 
 }
